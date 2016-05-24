@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Twitter SDK</h1>
+                    <p>@abcantuangco</p>
+                </section>
+				<section>
+                    <h2>Topics</h2>
+                    <ul>
+                        <li>Why Twitter?</li>
+                        <li>Why SDK?</li>
+                        <li>Creating Twitter App</li>
+                        <li>Get Twitter SDK</li>
+                        <li>Baking Time</li>
+                        <li>Test what you've baked</li>
+                        <li>Comments / Questions</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Why Twitter?</h2>
+                    <p>Twitter is by far the most popular microblogging platform in existence. It also offers a great way for anyone, in any industry to increase their reach.</p>
+                    <i>Source: <a href="http://www.inc.com/john-lincoln/why-twitter-is-secretly-one-of-the-best-networking-advantages-you-have.html" target="_blank">You're Probably Missing The Point Of Twitter. Here Is Why</a></i>
+                </section>
+                <section>
+                    <h2>Why SDK?</h2>
+                    <p>A <b>software development kit</b> (SDK or "devkit") is typically a set of software development tools that allows the creation of applications for a certain software package, software framework, hardware platform, computer system, video game console, operating system, or similar development platform.</p>
+                    <i>Source: <a href="https://en.wikipedia.org/wiki/Software_development_kit" target="_blank">Wikipedia</a></i>
+                </section>
+                <section>
+                    <section>
+                        <h2>Creating Twitter App</h2>
+                        <p>Go to <a href="https://apps.twitter.com/" target="_blank">https://apps.twitter.com/</a></p>
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_1.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_2.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_3.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_4.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_5.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_6.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/presentation/images/create_app_7.png" alt="">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Get Twitter SDK</h2>
+                    </section>
+                    <section>
+                        <p>Github, <a href="https://github.com/abraham/twitteroauth" target="_blank">https://github.com/abraham/twitteroauth</a></p>
+                        <img src="/presentation/images/sdk_1.png" alt="">
+                    </section>
+                    <section>
+                        <p>Composer packagist, <a href="https://packagist.org/packages/abraham/twitteroauth" target="_blank">https://packagist.org/packages/abraham/twitteroauth</a></p>
+                        <img src="/presentation/images/sdk_2.png" alt="">
+                    </section>
+                </section>
+                <section>
+                    <h2>Baking Time</h2>
+                    <ul>
+                        <li>Download SDK</li>
+                        <li>Integrate SDK</li>
+                        <li>Create test codes</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Test what you've baked</h2>
+                    <ul>
+                        <li>Post on Twitter timeline</li>
+                        <li>Login using Twitter</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Comments / Questions</h2>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
