@@ -32,8 +32,8 @@ class Twitter
      * Set access tokens / oauth tokens
      */
     public function setAccess() {
-        $this->instance->setOauthToken($_SESSION['oauth_token'],
-                            $_SESSION['oauth_token_secret']);
+        $this->instance->setOauthToken(isset($_SESSION['oauth_token']) ? $_SESSION['oauth_token'] : '' ,
+                            isset($_SESSION['oauth_token_secret']) ? $_SESSION['oauth_token_secret'] : '');
     }
 
     /**
